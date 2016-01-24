@@ -65,13 +65,13 @@ $(document).ready(function() {
 
       // $('#back').append("<img src='http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>");
 
-      $('#temp').append(temp + " " + labelUnit);
+      $('#temp').append(temp + "&deg;" + labelUnit + " |");
       // $('#mintemp').append(minTemp + " " + labelUnit);
       // $('#maxtemp').append(maxTemp + " " + labelUnit);
-      $('#humidity').append(humidity + " " + "%");
+      $('#humidity').append(humidity + "%");
       $('#date').append(myDate);
-      $('#condition').append(weather.weather[0].description);
-      $('#wind').append(windDirection + " " + weather.wind.speed + " knots");
+      $('#condition').append(weather.weather[0].description + " |");
+      $('#wind').append(weather.wind.speed + " knots" + " | " + windDirection);
 
     }, "jsonp");
 

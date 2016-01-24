@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 html {
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   /*width: 100%;
@@ -31,9 +31,11 @@ h1 {
 
 #temp, #humidity {
 	display: inline-block;
+  color: #9d16f9;
+  font-size: 1.2em;
 }
 
-.location, #condition, #wind {
+#condition, #wind {
 	display: inline-block;
 }
 
@@ -46,4 +48,5 @@ h1 {
   border-radius: 0.3em;
   box-shadow: .2em .2em .2em #444;
   opacity: 0.7;
+  max-width: 37%;
 }
